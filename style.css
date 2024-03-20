@@ -1,0 +1,248 @@
+/* Global Values */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+body {
+  background: url(img/background.jpg) center no-repeat;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+}
+
+.hideWeb {
+  display: block;
+}
+
+.container-fluid {
+  padding-inline: 21px;
+}
+
+.bg {
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+header {
+  padding: 26px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header img {
+  width: 260px;
+}
+header.sticky {
+  padding: 10px !important;
+  z-index: 9999;
+}
+
+/* Hero Section */
+.hero {
+  margin-top: 103px;
+  color: white;
+  text-align: left;
+}
+.hero h1 {
+  font-size: 32px;
+  margin: 20px 0;
+  margin-bottom: 31px;
+  font-weight: 500;
+}
+.hero p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.learnMore-form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 44px 24px;
+  margin: 50px 0;
+}
+.learnMore-form input {
+  background-color: #fff;
+  border: solid #939393 1px;
+  border-radius: 0;
+  font-size: 20px;
+  padding: 5px;
+}
+.learnMore-form .btn {
+  width: 100%;
+  padding: 12px 2px;
+  font-size: 16px;
+  color: white;
+  background-color: #1f5fb4;
+}
+.learnMore-form label {
+  color: #5c5c5c;
+  font-size: 12px;
+}
+.learnMore-form h2 {
+  color: #5c5c5c;
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.learnMore-form span {
+  color: red;
+}
+.learnMore-form .field {
+  margin-bottom: 12px;
+}
+
+.hero .margin-top {
+  line-height: 16px;
+  opacity: 0.8;
+}
+.hero .margin-top p {
+  font-size: 13px;
+}
+
+footer {
+  color: white;
+  padding: 40px 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.hideMob {
+  display: none;
+}
+
+/* Media */
+/* Mobile First Method */
+@media (min-width: 992px) {
+  .hero .margin-top {
+    margin-top: -66px;
+  }
+  .hero .margin-top p {
+    font-size: 10px;
+  }
+  .text {
+    padding-right: 100px;
+  }
+  .hideMob {
+    display: block;
+  }
+  .hideWeb {
+    display: none;
+  }
+  .container-fluid {
+    padding-inline: 90px;
+  }
+  header {
+    padding: 40px 0;
+  }
+  header img {
+    width: 247.6px;
+  }
+  .hero {
+    margin-top: 124px;
+  }
+  .hero h1 {
+    font-size: 39px;
+  }
+  .hero p {
+    font-size: 14px;
+    line-height: unset;
+  }
+  .learnMore-form {
+    padding: 31px 30px;
+    margin: 0;
+  }
+  .learnMore-form input {
+    padding: 3px;
+  }
+  .learnMore-form .btn {
+    width: 100%;
+    padding: 7px 2px;
+    margin-top: 20px;
+    font-size: 22px;
+  }
+  .learnMore-form label {
+    font-size: 15px;
+  }
+  .learnMore-form h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .learnMore-form .field {
+    margin-bottom: 10px;
+  }
+  footer {
+    text-align: left;
+  }
+}
+@media (min-width: 1802px) {
+  .hero h1 {
+    font-size: 61px;
+  }
+  .hero p {
+    font-size: 24px;
+  }
+  .hero .margin-top {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 1902px) {
+  .text {
+    padding-right: 122px;
+  }
+  .container-fluid {
+    padding-inline: 140px;
+  }
+  header {
+    padding: 50px 0;
+  }
+  header img {
+    width: 367.6px;
+  }
+  .hero {
+    margin-top: 174px;
+  }
+  .hero h1 {
+    font-size: 63px;
+    margin-top: 47px;
+  }
+  .hero p {
+    font-size: 24px;
+  }
+  .learnMore-form {
+    padding: 71px 44px;
+  }
+  .learnMore-form input {
+    padding: 12px;
+  }
+  .learnMore-form .btn {
+    padding: 22px 2px;
+    font-size: 22px;
+  }
+  .learnMore-form label {
+    font-size: 16px;
+  }
+  .learnMore-form h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .learnMore-form .field {
+    margin-bottom: 25px;
+  }
+  .hero .margin-top {
+    margin-top: -136px;
+  }
+  .hero .margin-top p {
+    font-size: 15px;
+  }
+  footer {
+    padding: 40px 0;
+    font-size: 16px;
+  }
+}
