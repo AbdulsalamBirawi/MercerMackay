@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta
+      name="EDA on the Cloud Offer from Arm, AWS, and Cadence"
+      content="Do more, faster, and better with Arm, AWS,
+      and Cadence. Three market leaders have
+      partnered to bring chip designers a way to
+      use EDA is the cloud for chip design and
+      verification. Sign up for the offer."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --blue: #1f60b4;
+        --gray: #3e3e3e;
+      }
+
+      .card {
+        border-radius: 17px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .description-gray {
+        color: var(--gray);
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .title-gray {
+        color: var(--gray);
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      .roboto-thin {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+
+      .roboto-light {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .roboto-medium {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      .roboto-bold {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .roboto-black {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+
+      .title {
+        font-size: 50px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      .first-title {
+        color: white;
+        margin-bottom: 15px;
+      }
+
+      .description {
+        line-height: 25px;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .description-bold {
+        line-height: 25px;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      .first-description {
+        color: white;
+        line-height: 25px;
+        font-size: 18px;
+      }
+
+      .first-content {
+        width: 50%;
+      }
+
+      .aws-logo {
+        margin-bottom: 150px;
+        margin-top: 30px;
+        width: 300px;
+      }
+
+      .first-section {
+        width: 100%;
+        height: 100vh;
+        background-image: url("assets/background.jpg");
+        background-size: cover;
+      }
+
+      .first-button {
+        background-color: white;
+        color: var(--blue);
+        font-size: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 50px;
+      }
+      .first-button:hover {
+        background-color: var(--blue);
+        color: white;
+      }
+
+      @media screen and (max-width: 768px) {
+        .container {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        .first-content {
+          width: 100%;
+        }
+        .first-button {
+          width: 100%;
+        }
+        .first-section {
+          height: fit-content;
+          padding-bottom: 30px;
+        }
+      }
+
+      .second-title {
+        color: var(--blue);
+        margin-bottom: 20px;
+      }
+
+      .list-title {
+        color: var(--gray);
+        margin-bottom: 15px;
+      }
+      ul {
+        list-style: none;
+        color: var(--gray);
+      }
+
+      ul > li {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        line-height: 25px;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-bottom: 10px;
+      }
+      ul > li > img {
+        width: 25px;
+        height: 25px;
+      }
+
+      .list-2 {
+        margin-top: 50px;
+      }
+    </style>
+    <section class="first-section px-5">
+      <div class="first-content">
+        <img
+          class="aws-logo"
+          src="./assets/arm-aws-cadence-logo-lockup.svg"
+          alt="aws"
+        />
+        <h3 class="first-title title">
+          Do More, Faster, and Better with Arm, AWS, and Cadence
+        </h3>
+        <p class="first-description description">
+          As System-on-chip (SoC) complexity escalates, chip designers need to
+          do more and execute faster. EDA on the cloud is the solution you’re
+          after. Arm, AWS, and Cadence have combined forces to offer membership
+          to Arm Flexible Access, AWS EC2 Graviton credits, and Xcelium
+          licenses* to run EDA workloads in the cloud.
+        </p>
+        <button class="first-button">Get the offe</button>
+      </div>
+    </section>
+    <section
+      class="second-section d-xl-flex d-xxl-flex d-sm-block d-md-block justify-content-between px-5 my-5"
+    >
+      <div class="content col-xl-5 col-sm-12 col-md-12">
+        <h3 class="title second-title">
+          What Can You Achieve Through This Offer?
+        </h3>
+        <div class="list-1">
+          <h3 class="list-title description-bold">
+            This offer provides you with the following benefits:
+          </h3>
+          <ul>
+            <li>
+              <img
+                src="assets/check_circle_FILL0_wght200_GRAD0_opsz24@2x.png"
+                alt="bla"
+                class="check-with-circel"
+              />
+              <p class="mb-0">
+                Leverage three market leaders to experience the value of a
+                combined solution
+              </p>
+            </li>
+            <li>
+              <img
+                src="assets/check_circle_FILL0_wght200_GRAD0_opsz24@2x.png"
+                alt="bla"
+                class="check-with-circel"
+              />
+              <p class="mb-0">
+                Access to a wide portfolio of proven, tested, and validated Arm
+                IP, technical support, and training
+              </p>
+            </li>
+            <li>
+              <img
+                src="assets/check_circle_FILL0_wght200_GRAD0_opsz24@2x.png"
+                alt="bla"
+                class="check-with-circel"
+              />
+              <p class="mb-0">Experiment with chip design in the cloud</p>
+            </li>
+            <li>
+              <img
+                src="assets/check_circle_FILL0_wght200_GRAD0_opsz24@2x.png"
+                alt="bla"
+                class="check-with-circel"
+              />
+              <p class="mb-0">
+                Experience the scale-out capabilities of Arm, AWS, and Cadence
+                while reducing carbon footprint
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="list-2">
+          <h3 class="list-title description-bold">In the end, you will:</h3>
+          <ul>
+            <li>
+              <img
+                src="assets/check_circle_FILL0_wght200_GRAD0_opsz24@2x.png"
+                alt="bla"
+                class="check-with-circel"
+              />
+              <p class="mb-0">Accelerate time to market</p>
+            </li>
+            <li>
+              <img
+                src="assets/check_circle_FILL0_wght200_GRAD0_opsz24@2x.png"
+                alt="bla"
+                class="check-with-circel"
+              />
+              <p class="mb-0">Reduce overall costs</p>
+            </li>
+            <li>
+              <img
+                src="assets/check_circle_FILL0_wght200_GRAD0_opsz24@2x.png"
+                alt="bla"
+                class="check-with-circel"
+              />
+              <p class="mb-0">Streamline design and procurement</p>
+            </li>
+            <li>
+              <img
+                src="assets/check_circle_FILL0_wght200_GRAD0_opsz24@2x.png"
+                alt="bla"
+                class="check-with-circel"
+              />
+              <p class="mb-0">Meet sustainability goals</p>
+            </li>
+          </ul>
+        </div>
+        <p class="description-gray" style="margin-top: 25px">
+          This offer is a must for chip designers serious about breaking through
+          SoC complexity.
+        </p>
+      </div>
+
+      <div class="form shadow-lg col-xl-5 col-sm-12 col-md-12 p-4">
+        <h4 class="description-gray">Opt-in to learn more about the offer</h4>
+
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-12">
+            <label for="validationCustom01" class="form-label"
+              >First name</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom01"
+              value="Mark"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="col-md-12">
+            <label for="validationCustom02" class="form-label">Last name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom02"
+              value="Otto"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="col-md-12">
+            <label for="validationCustomUsername" class="form-label"
+              >Email</label
+            >
+            <div class="input-group">
+              <input
+                type="email"
+                class="form-control"
+                id="validationCustomUsername"
+                aria-describedby="inputGroupPrepend"
+                required
+              />
+              <div class="invalid-feedback">Please put the email</div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <label for="validationCustom03" class="form-label">Company</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom03"
+              required
+            />
+            <div class="invalid-feedback">Please provide a valid company.</div>
+          </div>
+          <div class="col-md-12">
+            <label for="validationCustom05" class="form-label">Phone</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom05"
+              required
+            />
+            <div class="invalid-feedback">Please provide a valid phone</div>
+          </div>
+          <div class="col-12">
+            <label class="form-check-label mb-2" for="invalidCheck">
+              Who referred you?*
+            </label>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="invalidCheck"
+                required
+              />
+              <label class="form-check-label" for="invalidCheck"> Aws </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="invalidCheck"
+                required
+              />
+              <label class="form-check-label" for="invalidCheck"> Arm </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="invalidCheck"
+                required
+              />
+              <label class="form-check-label" for="invalidCheck">
+                Cadence
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label for="validationCustom03" class="form-label">other</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom03"
+                required
+              />
+              <div class="invalid-feedback">
+                Please provide a valid company.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <label class="form-check-label mb-2" for="invalidCheck">
+              Who would you like to be contacted by?
+            </label>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="invalidCheck"
+                required
+              />
+              <label class="form-check-label" for="invalidCheck"> Aws </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="invalidCheck"
+                required
+              />
+              <label class="form-check-label" for="invalidCheck"> Arm </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="invalidCheck"
+                required
+              />
+              <label class="form-check-label" for="invalidCheck">
+                Cadence
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button
+              class="btn col-12"
+              style="
+                background-color: var(--blue);
+                color: #fff;
+                padding-top: 15px;
+                padding-bottom: 15px;
+              "
+              type="submit"
+            >
+              Sign up
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="px-5 py-5" style="background-color: #edf3f7">
+      <h3 class="title second-title text-center mb-5">
+        Your Partners in Innovation
+      </h3>
+      <div
+        class="d-xl-flex d-xxl-flex d-sm-block d-md-block px-xl-4 px-xxl-4 px-sm-0 px-md-0"
+      >
+        <div
+          class="card p-3 mx-xl-3 mb-3"
+          style="width: 100%; border: 3px solid var(--blue)"
+        >
+          <div class="card-body">
+            <h5 class="card-title">About Arm Flexible Access</h5>
+
+            <p class="card-text mb-3">
+              Arm Flexible Access provides up-front, no-cost or low-cost access
+              to a wide range of Arm IP, tools, and training. Experiment and
+              design with the entire portfolio; license fees, if any, are only
+              due at the point of manufacture and calculated only on the IP
+              included in the final SoC design.
+            </p>
+            <a
+              href="https://www.arm.com/products/flexible-access"
+              class="d-flex align-items-center"
+              style="cursor: pointer"
+            >
+              <p
+                class="description mb-0 font-weight-bold mr-3"
+                style="color: var(--blue)"
+              >
+                Learn more
+              </p>
+              <img
+                src="assets/arrow_forward_FILL0_wght200_GRAD0_opsz24@2x.png"
+                style="width: 20px"
+              />
+            </a>
+          </div>
+        </div>
+        <div
+          class="card p-3 mx-xl-3 mb-3"
+          style="width: 100%; border: 3px solid var(--blue)"
+        >
+          <div class="card-body">
+            <h5 class="card-title">About Cadence Xcelium</h5>
+
+            <p class="card-text mb-3">
+              Cadence Xcelium Logic Simulator provides best- in-class core
+              engine performance for SystemVerilog, VHDL, SystemC®, e, UVM,
+              mixed-signal, low power, and X-propagation. It leverages a set of
+              domain-specific apps, including mixed-signal, machine
+              learning-based test compression, and functional safety, that
+              enable design teams to achieve verification closure early for IP
+              and SoC designs.
+            </p>
+            <a
+              href="https://www.cadence.com/en_US/home/tools/system-design-and-verification/simulation-and-testbench-verification/xcelium-simulator.html"
+              class="d-flex align-items-center"
+              style="cursor: pointer"
+            >
+              <p
+                class="description mb-0 font-weight-bold mr-3"
+                style="color: var(--blue)"
+              >
+                Learn more
+              </p>
+              <img
+                src="assets/arrow_forward_FILL0_wght200_GRAD0_opsz24@2x.png"
+                style="width: 20px"
+              />
+            </a>
+          </div>
+        </div>
+        <div
+          class="card p-3 mx-xl-3 mb-3"
+          style="width: 100%; border: 3px solid var(--blue)"
+        >
+          <div class="card-body">
+            <h5 class="card-title">About AWS EC2 Graviton Processors</h5>
+
+            <p class="card-text mb-3">
+              AWS EC2 Graviton Processors are Arm instruction set server
+              processor developed by AWS to deliver the best price performance
+              for cloud workloads running on Amazon EC2.
+            </p>
+            <a
+              href="https://aws.amazon.com/ec2/graviton/"
+              class="d-flex align-items-center"
+              style="cursor: pointer"
+            >
+              <p
+                class="description mb-0 font-weight-bold mr-3"
+                style="color: var(--blue)"
+              >
+                Learn more
+              </p>
+              <img
+                src="assets/arrow_forward_FILL0_wght200_GRAD0_opsz24@2x.png"
+                style="width: 20px"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="container py-5 d-flex flex-column justify-content-center align-items-center"
+    >
+      <h3 class="text-center description-gray">
+        When you ask to “get the offer”, you will be contacted by a sales
+        representative from one of the three partners who will help you access a
+        combination of Arm Flexible Access Membership, AWS EC2 Graviton credits,
+        and Cadence Xcelium licenses* using your existing customer ID
+        credentials.
+      </h3>
+      <h3 class="text-center description-gray mt-5">
+        Not a customer with any of us yet? Don’t worry, we’ll help you sign up
+        and get going.
+      </h3>
+      <p class="text-center mt-4">
+        *depending on qualifying purchase and selected options
+      </p>
+      <a
+        class="btn btn-lg px-5 mt-4"
+        style="background-color: var(--blue); color: white"
+        href="#"
+        role="button"
+      >
+        Get the offer</a
+      >
+    </section>
+    <footer class="px-5 py-2">
+      <p class="">© Copyright 2024 | [Footer]</p>
+    </footer>
+  </body>
+</html>
