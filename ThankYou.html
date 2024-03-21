@@ -51,7 +51,7 @@
         height: 100vh;
       }
       h5 {
-        color: #3e3e3e;
+        color: #5c5c5c;
       }
       .copy-mobile {
         display: none;
@@ -66,6 +66,15 @@
         .copy-desktop {
           display: none;
         }
+        .image-background {
+          height: 55vh;
+        }
+        .title {
+          font-size: 40px !important;
+        }
+      }
+      .title {
+        font-size: 50px;
       }
     </style>
     <section class="h-100 d-xl-flex d-xxl-flex d-sm-block d-sm-inline-block">
@@ -76,7 +85,7 @@
           src="assets/arm-aws-cadence-logo-lockup.png"
           style="width: 300px; margin-bottom: 100px"
         />
-        <h1 class="text-white font-weight-normal" style="font-size: 50px">
+        <h1 class="text-white title font-weight-normal">
           Thank you! We’ve received your request
         </h1>
         <div class="position-absolute copy-desktop" style="bottom: 30px">
@@ -89,20 +98,28 @@
             You can expect to receive a follow-up within 48 hours to schedule a
             meeting with a sales representative who will get you started.
           </h5>
-          <h5 class="font-weight-bold">Need information right away?</h5>
+          <h5 class="font-weight-bold mt-4">Need information right away?</h5>
           <h5 class="font-weight-normal">
             Reach out to our Program Manager, Jennifer Simpson –
             info@mercermackay.com
           </h5>
           <a
             class="btn btn-lg px-5 mt-4"
-            style="background-color: var(--blue); color: white"
+            style="
+              background-color: var(--blue);
+              color: white;
+              font-size: 15px;
+              font-weight: 500;
+            "
             href="#"
             role="button"
           >
             Reach out for more information
           </a>
-          <div class="copy-mobile mt-5 text-center" style="bottom: 30px">
+          <div
+            class="copy-mobile text-center"
+            style="bottom: 30px; margin-top: 60px"
+          >
             <p style="color: #3e3e3e">© Copyright 2024 | [Footer]</p>
           </div>
         </div>

@@ -152,7 +152,8 @@
 
       .first-section {
         width: 100%;
-        height: 100vh;
+        height: 100%;
+        padding-bottom: 70px;
         background-image: url("assets/background.jpg");
         background-size: cover;
       }
@@ -175,6 +176,9 @@
       }
 
       @media screen and (max-width: 768px) {
+        .title {
+          font-size: 30px;
+        }
         .container {
           padding-left: 20px;
           padding-right: 20px;
@@ -188,6 +192,9 @@
         .first-section {
           height: fit-content;
           padding-bottom: 30px;
+        }
+        .aws-logo {
+          margin-bottom: 50px;
         }
       }
 
@@ -203,6 +210,7 @@
       ul {
         list-style: none;
         color: var(--gray);
+        padding-left: 0px;
       }
 
       ul > li {
@@ -224,6 +232,10 @@
       .list-2 {
         margin-top: 50px;
       }
+      .card {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+      }
     </style>
     <section class="first-section px-5">
       <div class="first-content">
@@ -242,7 +254,7 @@
           to Arm Flexible Access, AWS EC2 Graviton credits, and Xcelium
           licenses* to run EDA workloads in the cloud.
         </p>
-        <button class="first-button">Get the offe</button>
+        <button class="first-button font-weight-bold">Get the offe</button>
       </div>
     </section>
     <section
@@ -418,7 +430,7 @@
                 id="invalidCheck"
                 required
               />
-              <label class="form-check-label" for="invalidCheck"> Aws </label>
+              <label class="form-check-label" for="invalidCheck"> AWS </label>
               <div class="invalid-feedback">
                 You must agree before submitting.
               </div>
@@ -476,7 +488,7 @@
                 id="invalidCheck"
                 required
               />
-              <label class="form-check-label" for="invalidCheck"> Aws </label>
+              <label class="form-check-label" for="invalidCheck"> Arm </label>
               <div class="invalid-feedback">
                 You must agree before submitting.
               </div>
@@ -489,11 +501,12 @@
                 id="invalidCheck"
                 required
               />
-              <label class="form-check-label" for="invalidCheck"> Arm </label>
+              <label class="form-check-label" for="invalidCheck"> AWS </label>
               <div class="invalid-feedback">
                 You must agree before submitting.
               </div>
             </div>
+
             <div class="form-check">
               <input
                 class="form-check-input"
@@ -536,10 +549,12 @@
       >
         <div
           class="card p-3 mx-xl-3 mb-3"
-          style="width: 100%; border: 3px solid var(--blue)"
+          style="width: 100%; border: 3px solid var(--blue); color: #5c5c5c"
         >
           <div class="card-body">
-            <h5 class="card-title">About Arm Flexible Access</h5>
+            <h5 class="card-title font-weight-bold">
+              About Arm Flexible Access
+            </h5>
 
             <p class="card-text mb-3">
               Arm Flexible Access provides up-front, no-cost or low-cost access
@@ -568,10 +583,10 @@
         </div>
         <div
           class="card p-3 mx-xl-3 mb-3"
-          style="width: 100%; border: 3px solid var(--blue)"
+          style="width: 100%; border: 3px solid var(--blue); color: #5c5c5c"
         >
           <div class="card-body">
-            <h5 class="card-title">About Cadence Xcelium</h5>
+            <h5 class="card-title font-weight-bold">About Cadence Xcelium</h5>
 
             <p class="card-text mb-3">
               Cadence Xcelium Logic Simulator provides best- in-class core
@@ -602,10 +617,12 @@
         </div>
         <div
           class="card p-3 mx-xl-3 mb-3"
-          style="width: 100%; border: 3px solid var(--blue)"
+          style="width: 100%; border: 3px solid var(--blue); color: #5c5c5c"
         >
           <div class="card-body">
-            <h5 class="card-title">About AWS EC2 Graviton Processors</h5>
+            <h5 class="card-title font-weight-bold">
+              About AWS EC2 Graviton Processors
+            </h5>
 
             <p class="card-text mb-3">
               AWS EC2 Graviton Processors are Arm instruction set server
@@ -650,7 +667,7 @@
         *depending on qualifying purchase and selected options
       </p>
       <a
-        class="btn btn-lg px-5 mt-4"
+        class="btn btn-lg px-5 mt-4 font-weight-bold"
         style="background-color: var(--blue); color: white"
         href="#"
         role="button"
@@ -658,7 +675,7 @@
         Get the offer</a
       >
     </section>
-    <footer class="px-5 py-2">
+    <footer class="px-5 py-2" style="color: #333; font-size: 15px">
       <p class="">© Copyright 2024 | [Footer]</p>
     </footer>
   </body>

@@ -6,7 +6,7 @@
   font-family: "Helvetica Neue", sans-serif;
 }
 
-body {
+.first-page {
   background: url(assets/background.jpg) center no-repeat;
   background-size: cover;
 }
@@ -30,7 +30,6 @@ img {
 
 /* Header */
 header {
-  padding: 26px 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -105,11 +104,14 @@ header.sticky {
 .hero .margin-top p {
   font-size: 13px;
 }
+.form-label {
+  font-size: 13px !important;
+}
 
 footer {
   color: white;
-  padding: 40px 0;
-  font-size: 16px;
+  padding: 20px 0;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -139,7 +141,7 @@ footer {
     padding-inline: 90px;
   }
   header {
-    padding: 40px 0;
+    padding-top: 40px;
   }
   header img {
     width: 247.6px;
@@ -148,10 +150,10 @@ footer {
     margin-top: 124px;
   }
   .hero h1 {
-    font-size: 39px;
+    font-size: 46px;
   }
   .hero p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: unset;
   }
   .learnMore-form {
